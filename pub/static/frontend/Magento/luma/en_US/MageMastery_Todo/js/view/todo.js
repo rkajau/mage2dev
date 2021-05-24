@@ -1,1 +1,0 @@
-/var/www/html/magento2dev/app/code/MageMastery/Todo/view/frontend/web/js/view/todo.js
