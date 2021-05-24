@@ -1,0 +1,411 @@
+[2021-01-17 19:31:15] main.ERROR: Parameter validation failed
+#0 /var/www/html/magento2dev/vendor/symfony/console/Command/Command.php(221): Magento\Setup\Console\Command\ConfigSetCommand->initialize()
+#1 /var/www/html/magento2dev/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#2 /var/www/html/magento2dev/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#3 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#4 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#5 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2021-01-17 19:31:49] main.ERROR: Parameter validation failed
+#0 /var/www/html/magento2dev/vendor/symfony/console/Command/Command.php(221): Magento\Setup\Console\Command\ConfigSetCommand->initialize()
+#1 /var/www/html/magento2dev/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#2 /var/www/html/magento2dev/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#3 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#4 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#5 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2021-01-17 19:59:24] main.ERROR: Parameter validation failed
+#0 /var/www/html/magento2dev/vendor/symfony/console/Command/Command.php(221): Magento\Setup\Console\Command\InstallCommand->initialize()
+#1 /var/www/html/magento2dev/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#2 /var/www/html/magento2dev/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#3 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#4 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#5 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#6 {main} [] []
+[2021-01-17 20:02:30] main.ERROR: Could not validate a connection to Elasticsearch. No alive nodes found in your cluster
+#0 /var/www/html/magento2dev/setup/src/Magento/Setup/Model/SearchConfig.php(69): Magento\Setup\Model\SearchConfig->validateSearchEngine()
+#1 /var/www/html/magento2dev/setup/src/Magento/Setup/Model/Installer.php(1184): Magento\Setup\Model\SearchConfig->saveConfiguration()
+#2 [internal function]: Magento\Setup\Model\Installer->installSearchConfiguration()
+#3 /var/www/html/magento2dev/setup/src/Magento/Setup/Model/Installer.php(388): call_user_func_array()
+#4 /var/www/html/magento2dev/setup/src/Magento/Setup/Console/Command/InstallCommand.php(231): Magento\Setup\Model\Installer->install()
+#5 /var/www/html/magento2dev/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\InstallCommand->execute()
+#6 /var/www/html/magento2dev/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#7 /var/www/html/magento2dev/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#8 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#9 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#10 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2021-01-18 03:42:11] main.ERROR: NOTE: Manual static content deployment is not required in "default" and "developer" modes.
+In "default" and "developer" modes static contents are being deployed automatically on demand.
+If you still want to deploy in these modes, use -f option: 'bin/magento setup:static-content:deploy -f'
+#0 /var/www/html/magento2dev/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(112): Magento\Setup\Console\Command\DeployStaticContentCommand->checkAppMode()
+#1 /var/www/html/magento2dev/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute()
+#2 /var/www/html/magento2dev/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#3 /var/www/html/magento2dev/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#4 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#5 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#6 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#7 {main} [] []
+[2021-01-18 05:09:58] main.CRITICAL: Can't create directory /var/www/html/magento2dev/generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-01-18 08:55:20] main.CRITICAL: Can't create directory /var/www/html/magento2dev/generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-01-18 08:55:53] main.CRITICAL: Can't create directory /var/www/html/magento2dev/generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-01-18 11:22:11] main.CRITICAL: Can't create directory /var/www/html/magento2dev/generated/code/Magento/Indexer/Model/Indexer/.
+Class Magento\Indexer\Model\Indexer\CollectionFactory generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-01-18 11:22:11] main.ERROR: There are no commands defined in the "setup" namespace.
+#0 /var/www/html/magento2dev/vendor/symfony/console/Application.php(657): Symfony\Component\Console\Application->findNamespace()
+#1 /var/www/html/magento2dev/vendor/symfony/console/Application.php(237): Symfony\Component\Console\Application->find()
+#2 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#3 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#4 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
+[2021-01-18 11:22:34] main.CRITICAL: Can't create directory /var/www/html/magento2dev/generated/code/Magento/Indexer/Model/Indexer/.
+Class Magento\Indexer\Model\Indexer\CollectionFactory generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-01-18 11:22:34] main.ERROR: There are no commands defined in the "setup" namespace.
+#0 /var/www/html/magento2dev/vendor/symfony/console/Application.php(657): Symfony\Component\Console\Application->findNamespace()
+#1 /var/www/html/magento2dev/vendor/symfony/console/Application.php(237): Symfony\Component\Console\Application->find()
+#2 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#3 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#4 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
+[2021-01-18 11:33:17] main.CRITICAL: Can't create directory /var/www/html/magento2dev/generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-01-18 11:55:00] main.CRITICAL: Can't create directory /var/www/html/magento2dev/generated/code/Magento/Framework/App/ResourceConnection/.
+Class Magento\Framework\App\ResourceConnection\Proxy generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-01-21 03:25:35] main.CRITICAL: TypeError: setcookie() expects parameter 3 to be integer, array given in /var/www/html/magento2dev/vendor/magento/framework/Stdlib/Cookie/PhpCookieManager.php:152
+Stack trace:
+#0 /var/www/html/magento2dev/vendor/magento/framework/Stdlib/Cookie/PhpCookieManager.php(152): setcookie('form_key', 'hnvCg0iO9hs1Xle...', Array)
+#1 /var/www/html/magento2dev/vendor/magento/framework/Stdlib/Cookie/PhpCookieManager.php(123): Magento\Framework\Stdlib\Cookie\PhpCookieManager->setCookie('form_key', 'hnvCg0iO9hs1Xle...', Array)
+#2 /var/www/html/magento2dev/vendor/magento/framework/App/PageCache/FormKey.php(76): Magento\Framework\Stdlib\Cookie\PhpCookieManager->setPublicCookie('form_key', 'hnvCg0iO9hs1Xle...', Object(Magento\Framework\Stdlib\Cookie\PublicCookieMetadata))
+#3 /var/www/html/magento2dev/vendor/magento/module-page-cache/Plugin/RegisterFormKeyFromCookie.php(106): Magento\Framework\App\PageCache\FormKey->set('hnvCg0iO9hs1Xle...', Object(Magento\Framework\Stdlib\Cookie\PublicCookieMetadata))
+#4 /var/www/html/magento2dev/vendor/magento/module-page-cache/Plugin/RegisterFormKeyFromCookie.php(78): Magento\PageCache\Plugin\RegisterFormKeyFromCookie->updateCookieFormKey('hnvCg0iO9hs1Xle...')
+#5 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(121): Magento\PageCache\Plugin\RegisterFormKeyFromCookie->beforeDispatch(Object(Magento\Framework\App\FrontController\Interceptor), Object(Magento\Framework\App\Request\Http))
+#6 /var/www/html/magento2dev/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#7 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch(Object(Magento\Framework\App\FrontController\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#8 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#9 /var/www/html/magento2dev/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#10 /var/www/html/magento2dev/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#11 /var/www/html/magento2dev/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#12 /var/www/html/magento2dev/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http\Interceptor->launch()
+#13 /var/www/html/magento2dev/index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
+#14 {main} [] []
+[2021-01-21 03:25:35] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-01-21 03:25:35] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-01-21 18:51:47] main.CRITICAL: TypeError: setcookie() expects parameter 3 to be integer, array given in /var/www/html/magento2dev/vendor/magento/framework/Stdlib/Cookie/PhpCookieManager.php:152
+Stack trace:
+#0 /var/www/html/magento2dev/vendor/magento/framework/Stdlib/Cookie/PhpCookieManager.php(152): setcookie('form_key', 'hnvCg0iO9hs1Xle...', Array)
+#1 /var/www/html/magento2dev/vendor/magento/framework/Stdlib/Cookie/PhpCookieManager.php(123): Magento\Framework\Stdlib\Cookie\PhpCookieManager->setCookie('form_key', 'hnvCg0iO9hs1Xle...', Array)
+#2 /var/www/html/magento2dev/vendor/magento/framework/App/PageCache/FormKey.php(76): Magento\Framework\Stdlib\Cookie\PhpCookieManager->setPublicCookie('form_key', 'hnvCg0iO9hs1Xle...', Object(Magento\Framework\Stdlib\Cookie\PublicCookieMetadata))
+#3 /var/www/html/magento2dev/vendor/magento/module-page-cache/Plugin/RegisterFormKeyFromCookie.php(106): Magento\Framework\App\PageCache\FormKey->set('hnvCg0iO9hs1Xle...', Object(Magento\Framework\Stdlib\Cookie\PublicCookieMetadata))
+#4 /var/www/html/magento2dev/vendor/magento/module-page-cache/Plugin/RegisterFormKeyFromCookie.php(78): Magento\PageCache\Plugin\RegisterFormKeyFromCookie->updateCookieFormKey('hnvCg0iO9hs1Xle...')
+#5 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(121): Magento\PageCache\Plugin\RegisterFormKeyFromCookie->beforeDispatch(Object(Magento\Framework\App\FrontController\Interceptor), Object(Magento\Framework\App\Request\Http))
+#6 /var/www/html/magento2dev/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#7 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch(Object(Magento\Framework\App\FrontController\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#8 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#9 /var/www/html/magento2dev/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#10 /var/www/html/magento2dev/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#11 /var/www/html/magento2dev/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#12 /var/www/html/magento2dev/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http\Interceptor->launch()
+#13 /var/www/html/magento2dev/index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
+#14 {main} [] []
+[2021-01-21 18:51:48] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-01-21 18:51:48] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:15:00] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:15:00] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:15:06] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:15:06] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:15:09] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:15:09] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:15:14] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:15:14] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:19:39] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 15:19:39] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 16:43:55] main.CRITICAL: TypeError: setcookie() expects parameter 3 to be integer, array given in /var/www/html/magento2dev/vendor/magento/framework/Stdlib/Cookie/PhpCookieManager.php:152
+Stack trace:
+#0 /var/www/html/magento2dev/vendor/magento/framework/Stdlib/Cookie/PhpCookieManager.php(152): setcookie('form_key', 'Z2qPmycNeXxRt6V...', Array)
+#1 /var/www/html/magento2dev/vendor/magento/framework/Stdlib/Cookie/PhpCookieManager.php(123): Magento\Framework\Stdlib\Cookie\PhpCookieManager->setCookie('form_key', 'Z2qPmycNeXxRt6V...', Array)
+#2 /var/www/html/magento2dev/vendor/magento/framework/App/PageCache/FormKey.php(76): Magento\Framework\Stdlib\Cookie\PhpCookieManager->setPublicCookie('form_key', 'Z2qPmycNeXxRt6V...', Object(Magento\Framework\Stdlib\Cookie\PublicCookieMetadata))
+#3 /var/www/html/magento2dev/vendor/magento/module-page-cache/Plugin/RegisterFormKeyFromCookie.php(106): Magento\Framework\App\PageCache\FormKey->set('Z2qPmycNeXxRt6V...', Object(Magento\Framework\Stdlib\Cookie\PublicCookieMetadata))
+#4 /var/www/html/magento2dev/vendor/magento/module-page-cache/Plugin/RegisterFormKeyFromCookie.php(78): Magento\PageCache\Plugin\RegisterFormKeyFromCookie->updateCookieFormKey('Z2qPmycNeXxRt6V...')
+#5 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(121): Magento\PageCache\Plugin\RegisterFormKeyFromCookie->beforeDispatch(Object(Magento\Framework\App\FrontController\Interceptor), Object(Magento\Framework\App\Request\Http))
+#6 /var/www/html/magento2dev/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#7 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch(Object(Magento\Framework\App\FrontController\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#8 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#9 /var/www/html/magento2dev/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#10 /var/www/html/magento2dev/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#11 /var/www/html/magento2dev/generated/code/Magento/Framework/App/Http/Interceptor.php(23): Magento\Framework\App\Http->launch()
+#12 /var/www/html/magento2dev/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http\Interceptor->launch()
+#13 /var/www/html/magento2dev/index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
+#14 {main} [] []
+[2021-04-17 16:43:56] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 16:43:56] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 16:43:58] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 16:43:58] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 16:45:27] main.ERROR: Command "setup:static-content:upgrade" is not defined.
+
+Did you mean one of these?
+    customer:hash:upgrade
+    setup:db-data:upgrade
+    setup:db-schema:upgrade
+    setup:static-content:deploy
+#0 /var/www/html/magento2dev/vendor/symfony/console/Application.php(237): Symfony\Component\Console\Application->find()
+#1 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#2 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#3 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2021-04-17 16:45:38] main.ERROR: NOTE: Manual static content deployment is not required in "default" and "developer" modes.
+In "default" and "developer" modes static contents are being deployed automatically on demand.
+If you still want to deploy in these modes, use -f option: 'bin/magento setup:static-content:deploy -f'
+#0 /var/www/html/magento2dev/setup/src/Magento/Setup/Console/Command/DeployStaticContentCommand.php(112): Magento\Setup\Console\Command\DeployStaticContentCommand->checkAppMode()
+#1 /var/www/html/magento2dev/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DeployStaticContentCommand->execute()
+#2 /var/www/html/magento2dev/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#3 /var/www/html/magento2dev/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#4 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#5 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#6 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#7 {main} [] []
+[2021-04-17 17:03:38] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:03:38] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:03:41] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:03:41] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:11:48] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:11:48] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:11:51] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:11:51] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:11:52] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:11:52] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:11:52] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:11:52] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:22:56] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:22:56] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:23:50] main.CRITICAL: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 17:23:50] main.ERROR: Type Error occurred when creating object: Magento\Framework\Session\Generic\Interceptor, setcookie() expects parameter 3 to be integer, array given [] []
+[2021-04-17 19:05:57] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2021-04-17 19:34:56] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2021-04-17 19:44:41] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2021-04-17 20:39:07] main.ERROR: Notice: Undefined index: frontName in /var/www/html/magento2dev/vendor/magento/framework/App/Route/Config.php on line 143 [] []
+[2021-04-17 20:40:36] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2021-04-18 08:50:01] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2021-04-18 09:57:58] main.ERROR: Unable to resolve the source file for 'frontend/Magento/luma/en_US/Magento_UI/js/core/app.js' [] []
+[2021-04-18 09:57:58] main.CRITICAL: Unable to resolve the source file for 'frontend/Magento/luma/en_US/Magento_UI/js/core/app.js' [] []
+[2021-04-18 10:00:01] main.ERROR: Unable to resolve the source file for 'frontend/Magento/luma/en_US/Magento_UI/js/core/app.js' [] []
+[2021-04-18 10:00:01] main.CRITICAL: Unable to resolve the source file for 'frontend/Magento/luma/en_US/Magento_UI/js/core/app.js' [] []
+[2021-04-18 10:01:03] main.ERROR: Unable to resolve the source file for 'frontend/Magento/luma/en_US/Magento_UI/js/core/app.js' [] []
+[2021-04-18 10:01:03] main.CRITICAL: Unable to resolve the source file for 'frontend/Magento/luma/en_US/Magento_UI/js/core/app.js' [] []
+[2021-04-19 05:13:21] main.ERROR: Unable to resolve the source file for 'frontend/Magento/luma/en_US/Magento_Customer/js/zxcvbn.js.map' [] []
+[2021-04-19 05:13:21] main.CRITICAL: Unable to resolve the source file for 'frontend/Magento/luma/en_US/Magento_Customer/js/zxcvbn.js.map' [] []
+[2021-04-19 05:13:29] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2021-04-24 09:14:20] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2021-04-24 09:45:41] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2021-04-24 11:32:32] main.ERROR: Command "se:d:ge" is ambiguous.
+Did you mean one of these?
+    setup:db-declaration:generate-whitelist Generate whitelist of table...
+    setup:db-declaration:generate-patch     Generate patch and put it i....
+#0 /var/www/html/magento2dev/vendor/symfony/console/Application.php(237): Symfony\Component\Console\Application->find()
+#1 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#2 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#3 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2021-04-24 14:51:45] main.CRITICAL: Class MageMastery\Todo\Controller\Index\Context does not exist
+Class MageMastery\Todo\Controller\Index\Index\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-04-24 14:51:45] main.ERROR: Class MageMastery\Todo\Controller\Index\Index\Interceptor does not exist [] []
+[2021-04-24 14:52:01] main.CRITICAL: Class MageMastery\Todo\Controller\Index\Context does not exist
+Class MageMastery\Todo\Controller\Index\Index\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-04-24 14:52:01] main.ERROR: Class MageMastery\Todo\Controller\Index\Index\Interceptor does not exist [] []
+[2021-04-24 14:52:07] main.CRITICAL: Class MageMastery\Todo\Controller\Index\Context does not exist
+Class MageMastery\Todo\Controller\Index\Index\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-04-24 14:52:07] main.ERROR: Class MageMastery\Todo\Controller\Index\Index\Interceptor does not exist [] []
+[2021-04-24 14:52:11] main.CRITICAL: Class MageMastery\Todo\Controller\Index\Context does not exist
+Class MageMastery\Todo\Controller\Index\Index\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-04-24 14:52:11] main.ERROR: Class MageMastery\Todo\Controller\Index\Index\Interceptor does not exist [] []
+[2021-04-24 15:04:47] main.CRITICAL: Class MageMastery\Todo\Controller\Index\Context does not exist
+Class MageMastery\Todo\Controller\Index\Index\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-04-24 15:04:47] main.ERROR: Class MageMastery\Todo\Controller\Index\Index\Interceptor does not exist [] []
+[2021-04-24 15:04:51] main.CRITICAL: Class MageMastery\Todo\Controller\Index\Context does not exist
+Class MageMastery\Todo\Controller\Index\Index\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-04-24 15:04:51] main.ERROR: Class MageMastery\Todo\Controller\Index\Index\Interceptor does not exist [] []
+[2021-04-24 15:04:52] main.CRITICAL: Class MageMastery\Todo\Controller\Index\Context does not exist
+Class MageMastery\Todo\Controller\Index\Index\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-04-24 15:04:52] main.ERROR: Class MageMastery\Todo\Controller\Index\Index\Interceptor does not exist [] []
+[2021-04-24 15:14:00] main.CRITICAL: Class MageMastery\Todo\Controller\Index\Context does not exist
+Class MageMastery\Todo\Controller\Index\Index\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2021-04-24 15:14:00] main.ERROR: Class MageMastery\Todo\Controller\Index\Context does not exist
+Class MageMastery\Todo\Controller\Index\Index\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only.
+#0 /var/www/html/magento2dev/setup/src/Magento/Setup/Module/Di/Code/Generator.php(69): Magento\Framework\Code\Generator->generateClass()
+#1 /var/www/html/magento2dev/setup/src/Magento/Setup/Module/Di/App/Task/Operation/Interception.php(100): Magento\Setup\Module\Di\Code\Generator->generateList()
+#2 /var/www/html/magento2dev/setup/src/Magento/Setup/Module/Di/App/Task/Manager.php(56): Magento\Setup\Module\Di\App\Task\Operation\Interception->doOperation()
+#3 /var/www/html/magento2dev/setup/src/Magento/Setup/Console/Command/DiCompileCommand.php(216): Magento\Setup\Module\Di\App\Task\Manager->process()
+#4 /var/www/html/magento2dev/vendor/symfony/console/Command/Command.php(255): Magento\Setup\Console\Command\DiCompileCommand->execute()
+#5 /var/www/html/magento2dev/vendor/symfony/console/Application.php(1009): Symfony\Component\Console\Command\Command->run()
+#6 /var/www/html/magento2dev/vendor/symfony/console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#7 /var/www/html/magento2dev/vendor/magento/framework/Console/Cli.php(115): Symfony\Component\Console\Application->doRun()
+#8 /var/www/html/magento2dev/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#9 /var/www/html/magento2dev/bin/magento(23): Symfony\Component\Console\Application->run()
+#10 {main} [] []
+[2021-04-24 17:48:05] main.ERROR: Braintree\Configuration::merchantId needs to be set (or accessToken needs to be passed to Braintree\Gateway). [] []
+[2021-04-24 17:48:23] main.CRITICAL: Error: Call to undefined method MageMastery\Todo\Model\ResourceModel\Task::set() in /var/www/html/magento2dev/app/code/MageMastery/Todo/Controller/Index/Index.php:34
+Stack trace:
+#0 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): MageMastery\Todo\Controller\Index\Index->execute()
+#1 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#2 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Plugin/ActionFlagNoDispatchPlugin.php(51): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#3 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Framework\App\Action\Plugin\ActionFlagNoDispatchPlugin->aroundExecute()
+#4 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(23): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#6 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Action.php(111): MageMastery\Todo\Controller\Index\Index\Interceptor->execute()
+#7 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch()
+#8 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#9 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(32): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#11 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(186): MageMastery\Todo\Controller\Index\Index\Interceptor->dispatch()
+#12 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(118): Magento\Framework\App\FrontController->processRequest()
+#13 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#14 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#15 /var/www/html/magento2dev/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#17 /var/www/html/magento2dev/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#18 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#19 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#20 /var/www/html/magento2dev/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#21 /var/www/html/magento2dev/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#22 /var/www/html/magento2dev/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http->launch()
+#23 /var/www/html/magento2dev/index.php(39): Magento\Framework\App\Bootstrap->run()
+#24 {main} [] []
+[2021-04-24 17:50:12] main.CRITICAL: Error: Call to undefined method MageMastery\Todo\Model\ResourceModel\Task::set() in /var/www/html/magento2dev/app/code/MageMastery/Todo/Controller/Index/Index.php:34
+Stack trace:
+#0 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): MageMastery\Todo\Controller\Index\Index->execute()
+#1 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#2 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Plugin/ActionFlagNoDispatchPlugin.php(51): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#3 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Framework\App\Action\Plugin\ActionFlagNoDispatchPlugin->aroundExecute()
+#4 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(23): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#6 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Action.php(111): MageMastery\Todo\Controller\Index\Index\Interceptor->execute()
+#7 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch()
+#8 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#9 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(32): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#11 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(186): MageMastery\Todo\Controller\Index\Index\Interceptor->dispatch()
+#12 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(118): Magento\Framework\App\FrontController->processRequest()
+#13 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#14 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#15 /var/www/html/magento2dev/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#17 /var/www/html/magento2dev/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#18 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#19 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#20 /var/www/html/magento2dev/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#21 /var/www/html/magento2dev/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#22 /var/www/html/magento2dev/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http->launch()
+#23 /var/www/html/magento2dev/index.php(39): Magento\Framework\App\Bootstrap->run()
+#24 {main} [] []
+[2021-04-24 17:51:06] main.CRITICAL: Error: Call to undefined method MageMastery\Todo\Model\ResourceModel\Task::set() in /var/www/html/magento2dev/app/code/MageMastery/Todo/Controller/Index/Index.php:34
+Stack trace:
+#0 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): MageMastery\Todo\Controller\Index\Index->execute()
+#1 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#2 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Plugin/ActionFlagNoDispatchPlugin.php(51): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#3 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Framework\App\Action\Plugin\ActionFlagNoDispatchPlugin->aroundExecute()
+#4 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(23): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#6 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Action.php(111): MageMastery\Todo\Controller\Index\Index\Interceptor->execute()
+#7 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch()
+#8 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#9 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(32): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#11 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(186): MageMastery\Todo\Controller\Index\Index\Interceptor->dispatch()
+#12 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(118): Magento\Framework\App\FrontController->processRequest()
+#13 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#14 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#15 /var/www/html/magento2dev/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#17 /var/www/html/magento2dev/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#18 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#19 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#20 /var/www/html/magento2dev/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#21 /var/www/html/magento2dev/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#22 /var/www/html/magento2dev/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http->launch()
+#23 /var/www/html/magento2dev/index.php(39): Magento\Framework\App\Bootstrap->run()
+#24 {main} [] []
+[2021-04-25 10:18:53] main.CRITICAL: Type Error occurred when creating object: MageMastery\Todo\Controller\Index\Index\Interceptor, Too few arguments to function MageMastery\Todo\Controller\Index\Index::__construct(), 3 passed in /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php on line 14 and exactly 4 expected [] []
+[2021-04-25 10:18:53] main.ERROR: Type Error occurred when creating object: MageMastery\Todo\Controller\Index\Index\Interceptor, Too few arguments to function MageMastery\Todo\Controller\Index\Index::__construct(), 3 passed in /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php on line 14 and exactly 4 expected [] []
+[2021-04-25 10:22:04] main.CRITICAL: Error: Call to undefined function MageMastery\Todo\Controller\Index\get() in /var/www/html/magento2dev/app/code/MageMastery/Todo/Controller/Index/Index.php:37
+Stack trace:
+#0 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): MageMastery\Todo\Controller\Index\Index->execute()
+#1 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#2 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Plugin/ActionFlagNoDispatchPlugin.php(51): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#3 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Framework\App\Action\Plugin\ActionFlagNoDispatchPlugin->aroundExecute()
+#4 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(23): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#6 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Action.php(111): MageMastery\Todo\Controller\Index\Index\Interceptor->execute()
+#7 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch()
+#8 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#9 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(32): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#11 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(186): MageMastery\Todo\Controller\Index\Index\Interceptor->dispatch()
+#12 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(118): Magento\Framework\App\FrontController->processRequest()
+#13 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#14 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#15 /var/www/html/magento2dev/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#17 /var/www/html/magento2dev/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#18 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#19 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#20 /var/www/html/magento2dev/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#21 /var/www/html/magento2dev/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#22 /var/www/html/magento2dev/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http->launch()
+#23 /var/www/html/magento2dev/index.php(39): Magento\Framework\App\Bootstrap->run()
+#24 {main} [] []
+[2021-04-25 10:31:58] main.CRITICAL: Error: Call to undefined function MageMastery\Todo\Controller\Index\get() in /var/www/html/magento2dev/app/code/MageMastery/Todo/Controller/Index/Index.php:37
+Stack trace:
+#0 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): MageMastery\Todo\Controller\Index\Index->execute()
+#1 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#2 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Plugin/ActionFlagNoDispatchPlugin.php(51): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#3 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Framework\App\Action\Plugin\ActionFlagNoDispatchPlugin->aroundExecute()
+#4 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(23): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#6 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Action.php(111): MageMastery\Todo\Controller\Index\Index\Interceptor->execute()
+#7 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch()
+#8 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#9 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(32): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#11 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(186): MageMastery\Todo\Controller\Index\Index\Interceptor->dispatch()
+#12 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(118): Magento\Framework\App\FrontController->processRequest()
+#13 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#14 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#15 /var/www/html/magento2dev/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#17 /var/www/html/magento2dev/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#18 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#19 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#20 /var/www/html/magento2dev/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#21 /var/www/html/magento2dev/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#22 /var/www/html/magento2dev/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http->launch()
+#23 /var/www/html/magento2dev/index.php(39): Magento\Framework\App\Bootstrap->run()
+#24 {main} [] []
+[2021-04-25 10:32:01] main.CRITICAL: Error: Call to undefined function MageMastery\Todo\Controller\Index\get() in /var/www/html/magento2dev/app/code/MageMastery/Todo/Controller/Index/Index.php:37
+Stack trace:
+#0 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): MageMastery\Todo\Controller\Index\Index->execute()
+#1 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#2 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Plugin/ActionFlagNoDispatchPlugin.php(51): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#3 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Framework\App\Action\Plugin\ActionFlagNoDispatchPlugin->aroundExecute()
+#4 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#5 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(23): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#6 /var/www/html/magento2dev/vendor/magento/framework/App/Action/Action.php(111): MageMastery\Todo\Controller\Index\Index\Interceptor->execute()
+#7 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch()
+#8 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): MageMastery\Todo\Controller\Index\Index\Interceptor->___callParent()
+#9 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): MageMastery\Todo\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}()
+#10 /var/www/html/magento2dev/generated/code/MageMastery/Todo/Controller/Index/Index/Interceptor.php(32): MageMastery\Todo\Controller\Index\Index\Interceptor->___callPlugins()
+#11 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(186): MageMastery\Todo\Controller\Index\Index\Interceptor->dispatch()
+#12 /var/www/html/magento2dev/vendor/magento/framework/App/FrontController.php(118): Magento\Framework\App\FrontController->processRequest()
+#13 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\FrontController->dispatch()
+#14 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(138): Magento\Framework\App\FrontController\Interceptor->___callParent()
+#15 /var/www/html/magento2dev/vendor/magento/module-store/App/FrontController/Plugin/RequestPreprocessor.php(99): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#16 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\Store\App\FrontController\Plugin\RequestPreprocessor->aroundDispatch()
+#17 /var/www/html/magento2dev/vendor/magento/module-page-cache/Model/App/FrontController/BuiltinPlugin.php(75): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#18 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(135): Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch()
+#19 /var/www/html/magento2dev/vendor/magento/framework/Interception/Interceptor.php(153): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}()
+#20 /var/www/html/magento2dev/generated/code/Magento/Framework/App/FrontController/Interceptor.php(23): Magento\Framework\App\FrontController\Interceptor->___callPlugins()
+#21 /var/www/html/magento2dev/vendor/magento/framework/App/Http.php(116): Magento\Framework\App\FrontController\Interceptor->dispatch()
+#22 /var/www/html/magento2dev/vendor/magento/framework/App/Bootstrap.php(263): Magento\Framework\App\Http->launch()
+#23 /var/www/html/magento2dev/index.php(39): Magento\Framework\App\Bootstrap->run()
+#24 {main} [] []
