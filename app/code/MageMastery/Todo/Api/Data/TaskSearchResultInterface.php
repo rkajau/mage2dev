@@ -11,7 +11,7 @@ use Magento\Framework\Api\Search\SearchResultInterface;
 interface TaskSearchResultInterface extends SearchResultInterface
 {
     /**
-     * @return TaskInterface[]
+     * @return TaskInterface
      */
     public function getItems();
 

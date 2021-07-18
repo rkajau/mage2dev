@@ -11,6 +11,7 @@ namespace MageMastery\Todo\Model\ResourceModel\Task;
 use MageMastery\Todo\Api\Data\TaskSearchResultInterface;
 use MageMastery\Todo\Model\ResourceModel\Task as TaskResource;
 use MageMastery\Todo\Model\Task;
+use Magento\Framework\Api\Search\SearchResultInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
@@ -42,7 +43,7 @@ class Collection extends AbstractCollection implements TaskSearchResultInterface
     public function setSearchCriteria(SearchCriteriaInterface $searchCriteria = null)
     {
         $this->searchCriteria = $searchCriteria;
-        return this;
+        return $this;
     }
 
     /**
@@ -63,5 +64,29 @@ class Collection extends AbstractCollection implements TaskSearchResultInterface
         return $this;
     }
 
+    /**
+     * @param array|null $items
+     * @return $this
+     * @throws \Exception
+     */
+    public function setItems(array $items = null)
+    {
+        if (!$items) {
+            return $this;
+        }
+        foreach ($items as $item) {
+            return $this->addItem($item);
+        }
+        return $this;
+    }
 
+    public function getAggregations()
+    {
+        // TODO: Implement getAggregations() method.
+    }
+
+    public function setAggregations($aggregations)
+    {
+        // TODO: Implement setAggregations() method.
+    }
 }

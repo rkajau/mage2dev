@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace MageMastery\Todo\Controller\Index;
 
+use MageMastery\Todo\Api\TaskManagementInterface;
 use MageMastery\Todo\Model\ResourceModel\Task as TaskResource;
+use Magento\Framework\Api\SearchCriteriaBuilder;
 use MageMastery\Todo\Model\Task;
 use MageMastery\Todo\Model\TaskFactory;
 use MageMastery\Todo\Service\TaskRepository;
@@ -21,28 +23,27 @@ class Index extends Action
      */
     private $taskRepository;
 
+    private $searchCriteriaBuilder;
+
+    private $taskManagement;
+
     public function __construct(
         Context $context,
         TaskFactory $taskFactory,
         TaskResource $taskResource,
-        TaskRepository $taskRepository
+        TaskRepository $taskRepository,
+        SearchCriteriaBuilder $searchCriteriaBuilder,
+        TaskManagementInterface $taskManagement
     ) {
         $this->taskResource = $taskResource;
         $this->taskFactory = $taskFactory;
         $this->taskRepository = $taskRepository;
+        $this->searchCriteriaBuilder = $searchCriteriaBuilder;
+        $this->taskManagement = $taskManagement;
         parent::__construct($context);
     }
     public function execute()
     {
-        $task = $this->taskRepository->get(1);
-        var_dump($task->getData());
-//        $task = $this->taskFactory->create();
-//        $task->setData([
-//            'label' => 'New Task 22',
-//            'status' => 'open',
-//            'customer_id' => 1
-//        ]);
-//        $this->taskResource->save($task);
-//        return $this->resultFactory->create(ResultFactory::TYPE_PAGE);
+        return $this->resultFactory->create(ResultFactory::TYPE_PAGE);
     }
 }
